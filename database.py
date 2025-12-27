@@ -9,7 +9,7 @@ class ReceiptsDatabase:
 
     def __init__(self):
 
-        if not os.path.exists(st.secrets['databaase']['db_name']):
+        if not os.path.exists(st.secrets['database']['db_name']):
 
             conn = self.database_connect()
             st.session_state.database_init = True
